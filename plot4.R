@@ -28,9 +28,9 @@ with(pwr_cons_small,{
     title(xlab="datetime", ylab="Voltage")
     
     # 3
-    plot(pwr_cons_small$DateTime, pwr_cons_small$Sub_metering_1, type="l",  ann=FALSE )
-    lines(pwr_cons_small$DateTime, pwr_cons_small$Sub_metering_2, type="l", col="red")
-    lines(pwr_cons_small$DateTime, pwr_cons_small$Sub_metering_3, type="l", col="blue")
+    plot(DateTime, Sub_metering_1, type="l",  ann=FALSE )
+    lines(DateTime, Sub_metering_2, type="l", col="red")
+    lines(DateTime, Sub_metering_3, type="l", col="blue")
     title( ylab="Energy sub metering")
     legend("topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), col=c("black","red", "blue"), lwd=1, bty="n")
     
